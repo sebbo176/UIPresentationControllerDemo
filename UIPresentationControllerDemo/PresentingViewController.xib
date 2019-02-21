@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PresentingViewController" customModule="UIPresentationControllerDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="miL-4Z-E5f">
+                    <rect key="frame" x="0.0" y="10" width="375" height="667"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Presenting VC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fP4-oF-wvN">
+                            <rect key="frame" x="125.5" y="321.5" width="124.5" height="24"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0r-oi-Gve">
+                            <rect key="frame" x="126" y="365.5" width="123" height="30"/>
+                            <state key="normal" title="Present modal VC">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="presentModalViewControllerAction:" destination="-1" eventType="touchUpInside" id="2eV-af-hTX"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.2755721096" green="0.66663229769999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="A0r-oi-Gve" firstAttribute="top" secondItem="fP4-oF-wvN" secondAttribute="bottom" constant="20" id="Y1W-Qb-Rtj"/>
+                        <constraint firstItem="fP4-oF-wvN" firstAttribute="centerX" secondItem="miL-4Z-E5f" secondAttribute="centerX" id="ndX-TR-GAt"/>
+                        <constraint firstItem="fP4-oF-wvN" firstAttribute="centerY" secondItem="miL-4Z-E5f" secondAttribute="centerY" id="oGF-Nf-JD8"/>
+                        <constraint firstItem="A0r-oi-Gve" firstAttribute="centerX" secondItem="miL-4Z-E5f" secondAttribute="centerX" id="uy0-O0-6KI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="miL-4Z-E5f" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="4pS-5Z-ZGS"/>
+                <constraint firstItem="miL-4Z-E5f" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="6dS-xx-c8E"/>
+                <constraint firstItem="miL-4Z-E5f" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="WrN-Kq-FRM"/>
+                <constraint firstItem="miL-4Z-E5f" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="ZqK-iH-kZP"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>
