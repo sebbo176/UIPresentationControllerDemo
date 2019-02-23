@@ -10,12 +10,12 @@ import UIKit
 
 class PresentingViewController: UIViewController {
     
-    lazy var transitionDelegate = ModalTransitionDelegate()
+    let modalTransitionDelegate = ModalTransitionDelegate()
     
     @IBAction func presentModalViewControllerAction(_ sender: UIButton) {
         let presentedVC = PresentedViewController()
         presentedVC.modalPresentationStyle = .custom
-        presentedVC.transitioningDelegate = transitionDelegate
+        presentedVC.transitioningDelegate = modalTransitionDelegate
         present(presentedVC, animated: true, completion: nil)
     }
 }

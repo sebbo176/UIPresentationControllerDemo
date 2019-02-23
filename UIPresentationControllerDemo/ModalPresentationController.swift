@@ -25,11 +25,10 @@ class ModalPresentationController: UIPresentationController, UIAdaptivePresentat
     }
     
     override var frameOfPresentedViewInContainerView: CGRect {
-        let width: CGFloat = presentingViewController.view.frame.width * 0.8
-        let height: CGFloat = presentingViewController.view.frame.height * 0.8
+        let width: CGFloat = presentingViewController.view.frame.width * 0.6
+        let height: CGFloat = presentingViewController.view.frame.height * 0.6
         let x: CGFloat = (presentingViewController.view.frame.width / 2) - (width / 2)
         let y: CGFloat = (presentingViewController.view.frame.height / 2) - (height / 2)
-        
         return CGRect(x: x, y: y, width: width, height: height)
     }
     
