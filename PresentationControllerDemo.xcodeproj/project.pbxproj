@@ -68,6 +68,7 @@
 		D07374B8221F274200360166 = {
 			isa = PBXGroup;
 			children = (
+				D0B9C63A22214D940093646F /* README.md */,
 				D07374C3221F274200360166 /* UIPresentationControllerDemo */,
 				D07374D8221F274300360166 /* UIPresentationControllerDemoTests */,
 				D07374C2221F274200360166 /* Products */,
@@ -96,7 +97,6 @@
 				D07374E9221F27C900360166 /* PresentedViewController.xib */,
 				D07374EC221F296A00360166 /* ModalTransitionDelegate.swift */,
 				D07374EE221F29C200360166 /* ModalPresentationController.swift */,
-				D0B9C63A22214D940093646F /* README.md */,
 			);
 			path = UIPresentationControllerDemo;
 			sourceTree = "<group>";
